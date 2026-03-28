@@ -98,15 +98,3 @@ Expected output:
 [PASS] R4 (LW R4=MEM[0]=8) [Load-use hazard test] = 8
 [PASS] MEM[0] = 8 (SW R3 -> MEM[0])
 ```
-
----
-
-## Resume Description
-
-> Designed a 5-stage pipelined RISC processor in SystemVerilog implementing IF, ID, EX, MEM, and WB stages. Integrated a forwarding unit to resolve data hazards and a hazard detection unit for load-use stalls. Verified pipeline correctness using a self-checking testbench with a cycle-by-cycle pipeline monitor.
-
----
-
-## Relevance to Nvidia
-
-Nvidia's GPU streaming multiprocessors use deeply pipelined execution units. Understanding pipeline hazards, forwarding, and stall logic is fundamental to GPU microarchitecture design — the exact skills evaluated in Nvidia's hardware architecture and verification interviews.
